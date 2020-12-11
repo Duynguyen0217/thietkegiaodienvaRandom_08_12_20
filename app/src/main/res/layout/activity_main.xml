@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#03A9F4"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+
+        android:id="@+id/textviewbaitoan"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="215dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fontcoder"
+        android:text="3 + 2"
+        android:textColor="#F7F0F0"
+        android:textSize="70dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textviewketqua"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="215dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fontcoder"
+        android:text="= 5"
+        android:textColor="#F7F0F0"
+        android:textSize="70dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <LinearLayout
+
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom|center_horizontal">
+
+        <ImageButton
+            android:id="@+id/imageright"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="#CEC7C7"
+            android:src="@drawable/ic_check">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/imagewrong"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="#CEC7C7"
+            android:src="@drawable/ic_close">
+
+        </ImageButton>
+    </LinearLayout>
+
+</LinearLayout>
