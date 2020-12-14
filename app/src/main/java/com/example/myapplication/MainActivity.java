@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -16,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton imageright, imagewrong;
     int msothu1,msothu2,mketqua,mpheptinh;
     Random mrandom;
-    boolean mrandomketqua;
+    boolean mrandomketqua =false;
 
 
     @Override
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         mrandom = new Random();
 
         msothu1 = mrandom.nextInt(10)+1;
-        msothu1 = mrandom.nextInt(10)+1;
+        msothu2 = mrandom.nextInt(10)+1;
        /* Log.d("AAAAAA" , "sothu1: " +msothu1);
         Log.d("AAAAAA" , "sothu2: " +msothu2);*/
 
@@ -76,16 +78,33 @@ public class MainActivity extends AppCompatActivity {
         {
             mketqua +=mrandom.nextInt(5)+1;
         }
-        else
+       /* else
         {
             mketqua +=mrandom.nextInt(10)+1;
-        }
+        }*/
         txtketqua.setText(" = "+mketqua);
 
 
 
 
         //tìm hiểu su kiện click của imagebutton
+
+
+       /* imageright.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(mrandomketqua==false) //git config --global user.email "you@example.com"
+
+                {
+                    Toast.makeText(MainActivity.this, "Đúng rồi", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    Toast.makeText(MainActivity.this, "Sai rồi", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });*/
 
 
 

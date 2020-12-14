@@ -18,9 +18,9 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_marginTop="30dp"
-        android:layout_width="215dp"
-        android:layout_weight="4"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp"
         android:fontFamily="@font/fontcoder"
         android:text="3 + 2"
         android:textColor="#F7F0F0"
@@ -32,10 +32,11 @@
     <TextView
         android:id="@+id/textviewketqua"
         android:layout_gravity="center"
+        android:gravity="center"
         android:layout_marginTop="10dp"
-        android:layout_width="215dp"
-        android:layout_weight="2"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp"
         android:fontFamily="@font/fontcoder"
         android:text="= 5"
         android:textColor="#F7F0F0"
@@ -55,7 +56,6 @@
             android:id="@+id/imageright"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:background="#CEC7C7"
             android:src="@drawable/ic_check">
 
         </ImageButton>
@@ -64,7 +64,7 @@
             android:id="@+id/imagewrong"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:background="#CEC7C7"
+            android:outlineAmbientShadowColor="#f00000"
             android:src="@drawable/ic_close">
 
         </ImageButton>
